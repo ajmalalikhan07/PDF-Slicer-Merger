@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Slicer & Merger - Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                <i class="fas fa-file-pdf text-red-500 mr-3"></i>
+                PDF Slicer & Merger Demo
+            </h1>
+            <p class="text-xl text-gray-600">Learn how to use the PDF Slicer & Merger application</p>
+        </div>
+
+        <!-- Quick Start Guide -->
+        <div class="bg-white rounded-lg shadow-sm border p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">🚀 Quick Start Guide</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Slicing Guide -->
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold text-blue-900 mb-3">
+                        <i class="fas fa-cut mr-2"></i>
+                        PDF Slicing
+                    </h3>
+                    <ol class="space-y-2 text-sm text-blue-800">
+                        <li><strong>1.</strong> Upload a PDF file</li>
+                        <li><strong>2.</strong> Go to "Slice PDF" tab</li>
+                        <li><strong>3.</strong> Select your PDF</li>
+                        <li><strong>4.</strong> Enter page range (e.g., 1-5 or 1,3,7)</li>
+                        <li><strong>5.</strong> Click "Slice PDF"</li>
+                        <li><strong>6.</strong> Download starts automatically!</li>
+                    </ol>
+                </div>
+
+                <!-- Merging Guide -->
+                <div class="bg-purple-50 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold text-purple-900 mb-3">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        PDF Merging
+                    </h3>
+                    <ol class="space-y-2 text-sm text-purple-800">
+                        <li><strong>1.</strong> Upload multiple PDF files</li>
+                        <li><strong>2.</strong> Go to "Merge PDFs" tab</li>
+                        <li><strong>3.</strong> Drag to reorder files (optional)</li>
+                        <li><strong>4.</strong> Click "Merge PDFs"</li>
+                        <li><strong>5.</strong> Download starts automatically!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Range Examples -->
+        <div class="bg-white rounded-lg shadow-sm border p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">📄 Page Range Examples</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-green-50 rounded-lg p-4">
+                    <h4 class="font-semibold text-green-900 mb-2">Single Pages</h4>
+                    <div class="space-y-2 text-sm">
+                        <div><code class="bg-white px-2 py-1 rounded">1</code> → Page 1 only</div>
+                        <div><code class="bg-white px-2 py-1 rounded">1,3,5</code> → Pages 1, 3, and 5</div>
+                        <div><code class="bg-white px-2 py-1 rounded">2,4,6,8</code> → Even pages</div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h4 class="font-semibold text-blue-900 mb-2">Page Ranges</h4>
+                    <div class="space-y-2 text-sm">
+                        <div><code class="bg-white px-2 py-1 rounded">1-5</code> → Pages 1 through 5</div>
+                        <div><code class="bg-white px-2 py-1 rounded">10-15</code> → Pages 10 through 15</div>
+                        <div><code class="bg-white px-2 py-1 rounded">1-3</code> → First 3 pages</div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-50 rounded-lg p-4">
+                    <h4 class="font-semibold text-purple-900 mb-2">Mixed Examples</h4>
+                    <div class="space-y-2 text-sm">
+                        <div><code class="bg-white px-2 py-1 rounded">1,3-7,10</code> → Complex selection</div>
+                        <div><code class="bg-white px-2 py-1 rounded">1-2,5-8</code> → Multiple ranges</div>
+                        <div><code class="bg-white px-2 py-1 rounded">1,5,10-12</code> → Mixed format</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Showcase -->
+        <div class="bg-white rounded-lg shadow-sm border p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">✨ Features</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-cloud-upload-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Drag & Drop</h3>
+                    <p class="text-sm text-gray-600">Simply drag PDF files onto the upload area</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-mobile-alt text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Fully Responsive</h3>
+                    <p class="text-sm text-gray-600">Works perfectly on all devices</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-shield-alt text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Privacy First</h3>
+                    <p class="text-sm text-gray-600">All processing happens in your browser</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-arrows-alt text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Reorder Files</h3>
+                    <p class="text-sm text-gray-600">Drag to reorder PDFs before merging</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-download text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Instant Download</h3>
+                    <p class="text-sm text-gray-600">Automatic download when processing is complete</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-bell text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Smart Notifications</h3>
+                    <p class="text-sm text-gray-600">Toast notifications for all operations</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Launch Button -->
+        <div class="text-center">
+            <a href="index.html" class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
+                <i class="fas fa-rocket mr-3"></i>
+                Launch PDF Slicer & Merger
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 pt-8 border-t">
+            <p class="text-gray-600 text-sm">
+                Made with <i class="fas fa-heart text-red-500"></i> for easy PDF management
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
