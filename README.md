@@ -1,60 +1,47 @@
-🧩 PDF Slicer & Merger
+# 📄 PDF Slicer & Merger
 
-A lightweight, privacy-first web application that allows users to slice and merge PDF files directly in their browser — no uploads, no servers, just pure client-side processing.
+A simple and efficient web tool that allows users to **split (slice)** and **merge multiple PDF files** directly from their browser.  
+Built with modern web technologies and deployed on **Vercel** for a seamless and fast experience.
 
-🔗 Live Demo: https://pdf-slicer-merger.vercel.app/
+🔗 **Live Demo:** [https://pdf-slicer-merger.vercel.app/](https://pdf-slicer-merger.vercel.app/)
 
-Quick Start Guide
-✂️ PDF Slicing
+---
 
-Upload a PDF file
+## 🚀 Features
 
-Go to the "Slice PDF" tab
+- ✂️ **Split PDFs:** Extract specific pages or ranges into a new PDF file.  
+- 🔗 **Merge PDFs:** Combine multiple PDF files into one.  
+- ⚡ **Instant Processing:** Everything happens on the client side — no file uploads to the server.  
+- 📱 **Responsive Design:** Works smoothly on desktop and mobile devices.  
+- 🧩 **User-Friendly UI:** Simple drag-and-drop interface for effortless file handling.
 
-Select your PDF
+---
 
-Enter the page range (e.g., 1-5 or 1,3,7)
+## 🛠️ Tech Stack
 
-Click "Slice PDF"
+| Technology | Purpose |
+|-------------|----------|
+| **React.js** | Frontend framework |
+| **Tailwind CSS** | Styling and layout |
+| **pdf-lib** | PDF manipulation (split & merge) |
+| **Vercel** | Deployment and hosting |
 
-Download starts automatically
+---
 
-📚 PDF Merging
+## 🧭 How to Use
 
-Upload multiple PDF files
+1. **Visit** the live app: [PDF Slicer & Merger](https://pdf-slicer-merger.vercel.app/)
+2. **Upload** one or more PDF files.
+3. Choose whether you want to **Split** or **Merge**.
+4. Configure your options:
+   - For *Split*: select page ranges.
+   - For *Merge*: arrange files in the desired order.
+5. Click **Generate PDF** — your new PDF will be ready for download instantly.
 
-Go to the "Merge PDFs" tab
+---
+Developer: Ajmal Ali Khan
 
-Drag to reorder files (optional)
+Email: ajmalalikhan1203@gmail.com
 
-Click "Merge PDFs"
+LinkedIn: www.linkedin.com/in/ajmal-ali-khan-a09471222
 
-Download starts automatically
-
-Features
-| Feature                    | Description                                    |
-| -------------------------- | ---------------------------------------------- |
-| 🖱️ **Drag & Drop**        | Easily drag PDF files onto the upload area     |
-| 📱 **Fully Responsive**    | Works perfectly across all devices             |
-| 🔒 **Privacy First**       | All processing happens locally in your browser |
-| ↕️ **Reorder Files**       | Drag to reorder before merging                 |
-| ⚡ **Instant Download**     | Automatically downloads after processing       |
-| 🔔 **Smart Notifications** | Toast messages for all operations              |
-
-Tech Stack
-
-Frontend: React + TailwindCSS
-
-PDF Processing: pdf-lib
-
-File Handling: FileSaver.js
-
-Deployment: Vercel
-
-Key Highlights
-
-100% client-side — your PDFs never leave your device
-
-Fast & simple — merge or slice in just a few clicks
-
-Intuitive interface — beginner-friendly and mobile-ready
