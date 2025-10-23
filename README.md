@@ -1,118 +1,60 @@
-# 📄 PDF Slicer & Merger
+🧩 PDF Slicer & Merger
 
-A simple web application to slice and merge PDF files directly in your browser. No uploads, no servers - everything happens locally on your device!
+A lightweight, privacy-first web application that allows users to slice and merge PDF files directly in their browser — no uploads, no servers, just pure client-side processing.
 
-## ✨ What Can It Do?
+🔗 Live Demo: https://pdf-slicer-merger.vercel.app/
 
-- **Slice PDFs**: Extract specific pages (e.g., pages 1-5 or 1,3,7)
-- **Merge PDFs**: Combine multiple PDF files into one
-- **Drag & Drop**: Simply drag files to upload them
-- **Reorder Files**: Drag to change the order before merging
-- **Mobile Friendly**: Works on phones, tablets, and computers
+Quick Start Guide
+✂️ PDF Slicing
 
-## � How to Use
+Upload a PDF file
 
-### Step 1: Start the Application
-Open your terminal and run:
-```bash
-cd /path/to/pdf-slicer-merger
-python3 -m http.server 3000
-```
+Go to the "Slice PDF" tab
 
-Then open your browser and go to: **http://localhost:3000**
+Select your PDF
 
-### Step 2: Upload PDF Files
-- Drag and drop PDF files onto the upload area, OR
-- Click "Browse Files" to select PDFs from your computer
+Enter the page range (e.g., 1-5 or 1,3,7)
 
-### Step 3: Choose Your Action
+Click "Slice PDF"
 
-**To Slice a PDF:**
-1. Click the "Slice PDF" tab
-2. Select which PDF to slice
-3. Enter page numbers:
-   - Single pages: `1,3,7`
-   - Page ranges: `1-5`
-   - Mixed: `1,3-7,10`
-4. Click "Slice PDF"
-5. Your new PDF downloads automatically!
+Download starts automatically
 
-**To Merge PDFs:**
-1. Upload multiple PDF files
-2. Click the "Merge PDFs" tab
-3. Drag files to reorder them if needed
-4. Click "Merge PDFs"
-5. Your merged PDF downloads automatically!
+📚 PDF Merging
 
-## 🛠️ Requirements
+Upload multiple PDF files
 
-- Any modern web browser (Chrome, Firefox, Safari, Edge)
-- Python 3 (to run the local server)
+Go to the "Merge PDFs" tab
 
-## 📱 Device Support
+Drag to reorder files (optional)
 
-- ✅ Desktop computers
-- ✅ Laptops
-- ✅ Tablets
-- ✅ Smartphones
+Click "Merge PDFs"
 
-## 🔒 Privacy & Security
+Download starts automatically
 
-- **100% Local**: All processing happens in your browser
-- **No Uploads**: Your PDFs never leave your device
-- **No Storage**: Files are not saved anywhere
-- **No Internet Required**: Works offline after initial load
+Features
+| Feature                    | Description                                    |
+| -------------------------- | ---------------------------------------------- |
+| 🖱️ **Drag & Drop**        | Easily drag PDF files onto the upload area     |
+| 📱 **Fully Responsive**    | Works perfectly across all devices             |
+| 🔒 **Privacy First**       | All processing happens locally in your browser |
+| ↕️ **Reorder Files**       | Drag to reorder before merging                 |
+| ⚡ **Instant Download**     | Automatically downloads after processing       |
+| 🔔 **Smart Notifications** | Toast messages for all operations              |
 
-## 🆘 Troubleshooting
+Tech Stack
 
-**Can't upload files?**
-- Make sure you're using http://localhost:3000 (not opening the HTML file directly)
-- Check that your files are actually PDF format
+Frontend: React + TailwindCSS
 
-**Page numbers not working?**
-- Use numbers starting from 1 (not 0)
-- Make sure page numbers don't exceed your PDF's total pages
-- Use commas for individual pages: `1,3,5`
-- Use dashes for ranges: `1-10`
+PDF Processing: pdf-lib
 
-**App not loading?**
-- Check if Python is installed: `python3 --version`
-- Try a different port: `python3 -m http.server 8000`
-- Make sure no other app is using port 3000
+File Handling: FileSaver.js
 
-## 📁 Project Files
+Deployment: Vercel
 
-```
-pdf-slicer-merger/
-├── index.html    # Main application
-├── app.js        # Core functionality
-├── demo.html     # Tutorial page
-└── start.sh      # Easy launch script
-```
+Key Highlights
 
-## 🚀 Quick Start Script
+100% client-side — your PDFs never leave your device
 
-For easier launching, you can use the provided script:
-```bash
-./start.sh
-```
+Fast & simple — merge or slice in just a few clicks
 
-This will automatically start the server and open your browser!
-
-## � Technologies Used
-
-- **HTML5** - Structure
-- **JavaScript** - Functionality  
-- **Tailwind CSS** - Styling
-- **pdf-lib** - PDF processing
-- **Font Awesome** - Icons
-
-## � License
-
-Free to use, modify, and share!
-
----
-
-**Made with ❤️ for easy PDF management**
-
-Need help? Check out the demo page at http://localhost:3000/demo.html
+Intuitive interface — beginner-friendly and mobile-ready
